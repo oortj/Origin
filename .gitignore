@@ -3,3 +3,4 @@ Arduino/
 temp/
 Images/
 .vscode/settings.json
+shootingStats/__pycache__/session.cpython-36.pyc

@@ -1,4 +1,3 @@
-#!/Users/jvanoort/miniconda3/bin/pythonw
 # Write your mean_fits function here:
 from astropy.io import fits
 import numpy as np

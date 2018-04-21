@@ -1,4 +1,4 @@
-#!/Users/jvanoort/miniconda3/bin/pythonw
+#!pythonw
 import csv
 from datetime import date
 from session import ShootingSession
