@@ -1,3 +1,4 @@
+#!/Users/jvanoort/miniconda3/bin/pythonw
 # Write your mean_fits function here:
 from astropy.io import fits
 import numpy as np
@@ -26,5 +27,5 @@ if __name__ == '__main__':
     #print(result[0][100, 100], result[1], result[2])
 
     result = median_fits(
-        ['fits_images/image{}.fits'.format(str(i)) for i in range(11)])
+        ['../fits_images/image{}.fits'.format(str(i)) for i in range(11)])
     print(result[0][100, 100], result[1], result[2])

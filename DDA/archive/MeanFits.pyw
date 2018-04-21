@@ -1,4 +1,5 @@
 # Write your mean_fits function here:
+#!pythonw
 from astropy.io import fits
 import numpy as np
 
@@ -18,8 +19,8 @@ def mean_fits(images):
 if __name__ == '__main__':
 
   # Test your function with examples from the question
-  data = mean_fits(['fits_images/image0.fits', 'fits_images/image1.fits',
-                    'fits_images/image2.fits', 'fits_images/image3.fits', 'fits_images/image4.fits'])
+  data = mean_fits(['../fits_images/image0.fits', '../fits_images/image1.fits',
+                    '../fits_images/image2.fits', '../fits_images/image3.fits', '../fits_images/image4.fits'])
   print(data[100, 100])
 
   # You can also plot the result:
