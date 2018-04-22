@@ -32,12 +32,13 @@ sessionList.sort(key=attrgetter('datum'), reverse=False)
 
 x = [x.datum for x in sessionList]
 y = [x.score for x in sessionList]
+r = [x.meanRadius**2 for x in sessionList]
 
 # for i, d in enumerate(x):
 # 	print('{} - {} - {}'.format(d, y[i], r[i]))
 
-plt.plot(x, y, label="scores")
-plt.scatter(x, y)
-plt.legend()
+plt.plot(x, y)
+plt.scatter(x, y, s=r, alpha=0.8, c='g')
+# plt.legend()
 
 plt.show()
