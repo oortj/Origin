@@ -1,6 +1,7 @@
 #!pythonw
 import pandas as pd
 from datetime import date
+import matplotlib as plt
 
 df = pd.read_csv('TargetScanData.csv', index_col=0, parse_dates=['Event Date'])
 
