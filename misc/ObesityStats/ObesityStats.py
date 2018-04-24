@@ -23,19 +23,12 @@ data_age.set_index('Year', inplace=True)
 # Drop the total column and plot
 data_age_minus_total = data_age.drop('All persons', axis=1)
 
-print(data_age)
+print(data_age_minus_total)
 
 # # Plot
 
 data_age_minus_total.plot()
 
-# fig = plt.figure()
-# ax = fig.add_subplot(111)
-
-# ax.legend(loc='best')
-
-# plt.plot(data_age_minus_total)
-# plt.legend(loc='upper left')
 plt.xticks(rotation=45)
 plt.show()
 
