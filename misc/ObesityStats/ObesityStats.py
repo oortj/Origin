@@ -29,16 +29,14 @@ data_age.set_index(['Year'], drop=True, inplace=True)
 data_age_minus_total = data_age.drop('All persons', axis=1)
 
 print(data_age_minus_total)
-
 print(data_age_minus_total.columns.values.tolist())
-
 print(data_age_minus_total.index)
 print(data_age_minus_total.index.dtype)
 print(type(data_age_minus_total.index))
 
 # # Plot
 fig, ax = plt.subplots(figsize=(15,7))
-data_age_minus_total.plot(ax=ax)
+data_age_minus_total.plot(title="Obesity in UK, all age groups", ax=ax)
 
 #set ticks every week
 #ax.xaxis.set_major_locator(mdates.YearLocator())
@@ -50,8 +48,8 @@ plt.show()
 plt.close()
 fig, ax = plt.subplots(figsize=(15,7))
 # # Plot children vs adults
-data_age_minus_total['Under 16'].plot(label="Under 16", ax=ax)
-data_age_minus_total['35 to 44'].plot(label="35-44", ax=ax)
+data_age_minus_total['Under 16'].plot(title="Obesity in UK, age under 16", label="Under 16", ax=ax)
+data_age_minus_total['35 to 44'].plot(title="Obesity in UK, age groups under 16 and 35-44", label="35 to 44", ax=ax)
 plt.legend(loc="upper left")
 plt.show()
 
