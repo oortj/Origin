@@ -17,4 +17,4 @@ def mean_datasets(files):
 # Any code inside this `if` statement will be ignored by the automarker.
 if __name__ == '__main__':
     # Run your `calculate_mean` function with examples:
-    print(mean_datasets(['csv/data1.csv', 'csv/data2.csv', 'csv/data3.csv']))
+    print(mean_datasets(['../csv/data1.csv', '../csv/data2.csv', '../csv/data3.csv']))
