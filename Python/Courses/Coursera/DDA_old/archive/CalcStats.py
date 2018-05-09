@@ -8,4 +8,4 @@ def calc_stats(file):
 # Any code inside this `if` statement will be ignored by the automarker.
 if __name__ == '__main__':
     # Run your `calculate_mean` function with examples:
-    print(calc_stats('csv/data.csv'))
+    print(calc_stats('../csv/data.csv'))
