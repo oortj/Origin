@@ -52,5 +52,3 @@ data_age_minus_total['Under 16'].plot(title="Obesity in UK, age under 16", label
 data_age_minus_total['35 to 44'].plot(title="Obesity in UK, age groups under 16 and 35-44", label="35 to 44", ax=ax)
 plt.legend(loc="upper left")
 plt.show()
-
-
